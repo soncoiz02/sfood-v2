@@ -60,8 +60,8 @@ const Header = () => {
                 className={`relative font-bold text-xl ${
                   actievLink(item.path)
                     ? "text-primary after:w-full after:left-0"
-                    : ""
-                } hover:text-primary transition-[1s] px-4 py-2 after:content-[''] after:absolute after:-bottom-1 after:left-[50%] after:w-0 after:h-1 after:rounded-lg after:transition-[1s] after:bg-primary hover:after:w-full hover:after:left-0`}
+                    : "after:left-[50%]"
+                } hover:text-primary transition-[1s] px-4 py-2 after:content-[''] after:absolute after:-bottom-1 after:w-0 after:h-1 after:rounded-lg after:transition-[1s] after:bg-primary hover:after:w-full hover:after:left-0`}
               >
                 {item.name}
               </Link>
@@ -104,8 +104,8 @@ const Header = () => {
                 className={`relative font-bold text-xl ${
                   actievLink(item.path)
                     ? "text-primary after:w-full after:left-0"
-                    : ""
-                } hover:text-primary transition-[1s] px-4 py-2 after:content-[''] after:absolute after:-bottom-1 after:left-[50%] after:w-0 after:h-1 after:rounded-lg after:transition-[1s] after:bg-primary hover:after:w-full hover:after:left-0`}
+                    : "after:left-[50%]"
+                } hover:text-primary transition-[1s] px-4 py-2 after:content-[''] after:absolute after:-bottom-1 after:w-0 after:h-1 after:rounded-lg after:transition-[1s] after:bg-primary hover:after:w-full hover:after:left-0`}
               >
                 {item.name}
               </Link>
