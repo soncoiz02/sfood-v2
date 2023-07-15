@@ -4,6 +4,7 @@ import "./globals.css";
 
 import { config } from "@fortawesome/fontawesome-svg-core";
 import "@fortawesome/fontawesome-svg-core/styles.css";
+import { ReduxProvider } from "@/redux/Provider";
 config.autoAddCss = false;
 
 const nunito = Nunito({ subsets: ["latin"] });
@@ -21,8 +22,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={nunito.className}>
-        <Header />
-        <main className="mt-[60px]">{children}</main>
+        <ReduxProvider>
+          <Header />
+          <main className="mt-[60px]">{children}</main>
+        </ReduxProvider>
       </body>
     </html>
   );
